@@ -4,10 +4,10 @@
 Django-based web application for university students to address social isolation by COVID-19
 
 🛠 Tech Stack: Django (Backend) + React (Frontend)  
-⏰ Duration: Developed over two months (Jan 2021 - Mar 2021)
+⏰ Duration: Developed over two months (Jan 2021 - Mar 2021)  
 👥 Team: 3 business major undergraduates  
  🔸[박신홍(@shp7724)](https://github.com/shp7724): Frontend, Chats App, Keyword App, Users App  
- 🔸[최상혁(@hyeok9855)](https://github.com/hyeok9855): Feeds App, Django Admin, Google Analytics 
+ 🔸[최상혁(@hyeok9855)](https://github.com/hyeok9855): Feeds App, Django Admin, Google Analytics  
  🔸[박지상(@alsichcan)](https://github.com/alsichcan): UX Design, Notification App, Relationship App   
 
 
