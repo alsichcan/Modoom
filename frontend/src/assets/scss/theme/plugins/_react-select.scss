@@ -1,0 +1,95 @@
+.react-select__control {
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: $input-bg !important;
+
+
+  .react-select__value-container {
+    padding: 0;
+  }
+
+  .react-select__placeholder {
+    white-space: nowrap;
+    padding-left: 0px;
+    color: $gray-400;
+    margin: 0;
+  }
+
+  @include hover-focus {
+    outline: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .react-select__multi-value {
+    background-color: $gray-200 !important;
+    border-radius: $border-radius;
+  }
+}
+
+.react-select__menu {
+  .react-select__option {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+
+    @include hover-focus {
+      color: $white !important;
+    }
+  }
+}
+
+.react-select__multi-value__label {
+  // 라벨 모양을 키워드 뱃지와 동일하게 만들어준다.
+  color: #33638d !important;
+  font-weight: 600;
+}
+
+.react-select__option-detail {
+  color: $gray-600;
+}
+
+.react-select__option:hover {
+  .react-select__option-detail {
+    color: $white !important;
+  }
+}
+
+.react-select__menu {
+  background-color: $custom-select-bg !important;
+  box-shadow: $box-shadow !important;
+  border: 1px solid $gray-300 !important;
+}
+
+.react-select__menu-notice {
+  // No Options, Loading... 등
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  color: $gray-600 !important;
+  font-size: 0.9rem !important;
+}
+
+.react-select__option {
+  background-color: $custom-select-bg !important;
+  color: $gray-900 !important;
+  font-size: 0.9rem !important;
+
+  @include hover-focus {
+    background-color: $primary !important;
+  }
+}
+
+.react-select__indicator-separator, .react-select-standard__indicator-separator {
+  background-color: $gray-300 !important;
+}
+
+.react-select__indicator, .react-select-standard__indicator svg {
+  color: $gray-300 !important;
+}
+
+// Falcon Input Form과 동일한 테마의 react-select
+
+.react-select-standard__control {
+  border: 1px solid $gray-300 !important;
+}

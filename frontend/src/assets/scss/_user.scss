@@ -1,0 +1,606 @@
+//
+//
+// user.scss
+//
+// Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+// 스크롤바 없애기
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+// 카드 높이 동일하게 만들기
+
+.card {
+  transition: $transition-base;
+  margin-bottom: 20px;
+}
+
+.card-fluid {
+  height: calc(100% - 20px);
+}
+
+// user-select none 관련
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome, Opera and Firefox */
+}
+
+// search box 아이콘의 z-index가 burger 메뉴보다 높은 문제 수정
+
+.search-box .search-box-icon {
+  z-index: 900 !important;
+}
+
+// 한글 줄바꿈 어절별로 수행
+
+.word-break-keep-all {
+  word-break: keep-all !important;
+}
+
+// Lottie 여백이 너무 넓은 경우 negative margin
+
+.lottie-wrapper {
+  margin: -5rem -5rem -4rem -5rem
+}
+
+// Text Loading Animation
+
+.crawling-loader span {
+  display: inline-block;
+  animation: loading 1s infinite alternate;
+}
+
+.crawling-loader span:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.crawling-loader span:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.crawling-loader span:nth-child(4) {
+  animation-delay: .3s;
+}
+
+.crawling-loader span:nth-child(5) {
+  animation-delay: .4s;
+}
+
+.crawling-loader span:nth-child(6) {
+  animation-delay: .5s;
+}
+
+.crawling-loader span:nth-child(7) {
+  animation-delay: .6s;
+}
+
+.crawling-loader span:nth-child(8) {
+  animation-delay: .7s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+// Influencer.js 에 들어가는 LikeButton
+// Avatar 가운데 밑에 좋아요 버튼을 정렬시킨다.
+
+.avatar-like {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: -19.14px;
+  top: 5.2rem;
+  padding: 0 0.7rem;
+}
+
+// hidden 속성 추가
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+// FilterButton Border 및 Background 설정
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.btn-flush-dark:not(.active), .btn-flush-dark:hover, .btn-flush-dark:focus:not(.active) {
+  box-shadow: none !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-flush-dark.active, .btn-flush-dark.active:focus {
+  box-shadow: none !important;
+  background-color: #091521 !important;
+  border-color: #112138 !important;
+}
+
+// NoteRequest 페이지 테이블 헤더 간격 조정
+
+.table-header {
+  padding-bottom: 0.3rem !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+// UI 컬러 변경
+
+$xiaohongshu: #ff2442 !default;
+.text-xiaohongshu {
+  color: $xiaohongshu;
+}
+
+.bg-xiaohongshu {
+  background-color: $xiaohongshu;
+}
+
+.notification-indicator-xiaohongshu::before {
+  background-color: $xiaohongshu;
+}
+
+// card-button (hovering 시 가장자리 붉게)
+
+.card-button {
+  border-width: 1px !important;
+}
+
+.card-button:hover {
+  border-color: $xiaohongshu !important;
+}
+
+// cursor-none 추가
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+// Navbar Toggle Hover 효과 비활성화
+
+.navbar-vertical-toggle:hover, .navbar-vertical-toggle:focus {
+  background-color: transparent !important;
+}
+
+// React Select 관련 커스터마이징
+
+//.react-select__menu {
+//  //border: 1px solid $gray-300 !important;
+//  box-shadow: $box-shadow !important;
+//
+//  .react-select__option {
+//    color: $gray-700 !important;
+//    @include hover-focus {
+//      background-color: #8242ff20 !important;
+//      color: $gray-900 !important;
+//    }
+//  }
+//
+//  .react-select__menu-notice { // 메뉴 메시지
+//    color: $gray-400;
+//  }
+//}
+//
+//// react-select-standard
+//
+//.react-select-standard__placeholder {
+//  color: $gray-400 !important;
+//}
+//
+//.react-select-standard__value-container {
+//  padding-left: 1rem !important;
+//  padding-right: 1rem !important;
+//}
+//
+//.react-select-standard__single-value { // 검색창 텍스트
+//  //padding-left: 0.25rem;
+//  color: $gray-900 !important;
+//}
+
+// 카드 그림자 수정
+
+.card {
+  box-shadow: $box-shadow;
+}
+
+// 브랜드 분석 tab hover 효과
+
+.nav-tab-button {
+  cursor: pointer;
+
+  &:hover {
+    transition: $transition-link;
+    filter: brightness(80%);
+  }
+}
+
+// React-Select Loader
+
+.loading-indicator {
+  color: rgb(204, 204, 204);
+  display: flex;
+  align-self: center;
+  font-size: 4px;
+  line-height: 1;
+  margin-right: 4px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 8px;
+  transition: color 150ms ease 0s;
+}
+
+.loading-dot {
+  background-color: currentcolor;
+  display: inline-block;
+  height: 1em;
+  vertical-align: top;
+  width: 1em;
+  border-radius: 1em;
+  animation: loading-dot-animations 1s ease-in-out 0ms infinite;
+}
+
+.loading-dot:nth-of-type(2) {
+  animation: loading-dot-animations 1s ease-in-out 160ms infinite !important;
+  margin-left: 1em !important;
+}
+
+.loading-dot:nth-of-type(3) {
+  animation: loading-dot-animations 1s ease-in-out 320ms infinite !important;
+  margin-left: 1em !important;;
+}
+
+@keyframes loading-dot-animations {
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+// stick kit
+
+.sticky-sidebar {
+  top: 80px !important;
+  position: sticky !important;
+}
+
+// navbar category
+
+.nav-header {
+  padding: 0.2rem 1.5rem;
+}
+
+.nav-dropdown-header {
+  padding: 0.25rem 1rem;
+}
+
+// Pagination Input
+
+.form-control-flush {
+  padding: 0
+}
+
+.form-control-flush, .form-control-flush:focus {
+  border-width: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.form-control-flush::-webkit-outer-spin-button, .form-control-flush::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// scrollTopButton
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  right: 40px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+// Print page breaks
+
+//.card {
+//  page-break-after: always;
+//  page-break-inside: avoid;
+//}
+
+// For Print Dashboard
+
+@media print {
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #d8e2ef !important;
+  }
+
+  .badge {
+    border: none !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .content {
+    padding-top: 0 !important;
+  }
+
+  .scrollTop {
+    display: none !important;
+  }
+
+  html, body {
+    height: 100% !important;
+    margin: 0 !important;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  body {
+    background-color: unset !important;
+  }
+}
+
+// 프린트 화면을 보여주지 않기 위함.
+#dimScreen {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+@page {
+  margin: 0 !important;
+}
+
+// 레이아웃 보이도록 하기 위함.
+
+.border-red {
+  border: 2px solid red;
+}
+
+// container xxl, xl 제거
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// css-truncate from github
+
+.css-truncate.css-truncate-overflow, .css-truncate .css-truncate-overflow, .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+  display: inline-block;
+  max-width: 150px;
+  vertical-align: top
+}
+
+.css-truncate.expandable.zeroclipboard-is-hover.css-truncate-target, .css-truncate.expandable.zeroclipboard-is-hover .css-truncate-target, .css-truncate.expandable:hover.css-truncate-target, .css-truncate.expandable:hover .css-truncate-target {
+  max-width: 10000px !important
+}
+
+// campaign progress
+
+.shadow-md {
+  box-shadow: 0 0 1rem rgba(59, 65, 94, 0.15);
+}
+
+// landing page
+
+.mosaic#main {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+
+  .mosaic__item:nth-of-type(1) {
+    grid-column: 3 / span 7;
+    grid-row: 1 / span 11;
+  }
+
+  .mosaic__item:nth-of-type(2) {
+    grid-column: 7 / span 5;
+    grid-row: 3 / span 10;
+  }
+
+  .mosaic__item:nth-of-type(3) {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 10;
+  }
+}
+
+.mosaic#brand {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  .mosaic__item:nth-of-type(1) {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 11;
+  }
+
+  .mosaic__item:nth-of-type(2) {
+    grid-column: 3 / span 6;
+    grid-row: 10;
+  }
+}
+
+.mosaic#dashboard {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+
+  .mosaic__item:nth-of-type(1) {
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 11;
+  }
+
+  .mosaic__item:nth-of-type(2) {
+    grid-column: 6 / span 6;
+    grid-row: 11;
+  }
+}
+
+
+.bg-landing-circle-shape {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  right: 10px;
+}
+
+.bg-landing-circle-shape-2 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  top: 300px;
+}
+
+// XHS Logo Path
+
+.logo-xiaohongshu {
+  overflow: visible;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+// scroll down arrow
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 0;
+  transform: scale(0.3);
+}
+
+.arrows path {
+  stroke: #ffffff;
+  fill: transparent;
+  stroke-width: 3px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+  40% {
+    opacity: 1
+  }
+  80% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+  0% {
+    opacity: 0
+  }
+  40% {
+    opacity: 1
+  }
+  80% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+.nowrap {
+    white-space: nowrap;
+}

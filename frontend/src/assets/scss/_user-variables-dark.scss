@@ -1,0 +1,47 @@
+//
+//
+// user-variables.scss
+//
+// Place your own variable overrides here, these will override any Bootstrap and theme variables.
+
+.bg-gender-male {
+  background-color: #3D5A80 !important;
+}
+
+.bg-gender-female {
+  background-color: #EE6C4D !important;
+}
+
+.bg-age-1 {
+  background-color: #a5dcff !important;
+}
+
+.bg-age-2 {
+  background-color: #00A8E8 !important;
+}
+
+.bg-age-3 {
+  background-color: #007EA7 !important;
+}
+
+.bg-age-4 {
+  background-color: #00516b !important;
+}
+
+.bg-age-5 {
+  background-color: #003459 !important;
+}
+
+// 행 음영
+.bg-shade {
+  background-color: rgb(19, 34, 56) !important;
+}
+
+
+// Transition 효과
+
+$transition-link: all .2s ease-in-out, border-width 0s, font-weight 0s !important;
+
+// Box Shadow 변경 (다크 모드)
+
+$box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.01), 0 3px 6px 0 rgba(0, 0, 0, 0.05) !default;

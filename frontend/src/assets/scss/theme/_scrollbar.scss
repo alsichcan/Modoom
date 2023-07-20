@@ -1,0 +1,22 @@
+.TrackY {
+  width: 7px !important;
+  background-color: transparent !important;
+
+  .ScrollbarsCustom-ThumbY {
+    background-color: rgba($gray-600, 0.5) !important;
+  }
+}
+
+.TrackX {
+  height: 7px !important;
+  background-color: transparent !important;
+
+
+  .ScrollbarsCustom-ThumbX {
+    background-color: rgba($gray-600, 0.5) !important;
+  }
+}
+
+.ScrollbarsCustom-Track.ScrollbarsCustom-TrackX {
+  display: none !important;
+}

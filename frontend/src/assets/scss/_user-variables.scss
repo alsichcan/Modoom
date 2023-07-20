@@ -1,0 +1,91 @@
+/*-----------------------------------------------
+|  Colors
+-----------------------------------------------*/
+
+$blue: #4F9ADD !default;
+$red: #EF6C64 !default;
+$orange: #F0C065 !default;
+$cyan: #71D0D8 !default;
+$green: #51A752 !default;
+
+$primary: $blue !default;
+$danger: $red !default;
+$warning: $orange !default;
+$info: $cyan !default;
+$success: $green !default;
+
+
+
+// Box Shadow 변경 (라이트 모드)
+
+$box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.01), 0 3px 6px 0 rgba(0, 0, 0, 0.05) !default;
+
+// Transition 효과
+
+$transition-link: all .2s ease-in-out, border-width 0s, font-weight 0s !important;
+
+// UI 컬러 변경
+
+$xiaohongshu: #ff2442 !default;
+.text-xiaohongshu {
+  color: $xiaohongshu;
+}
+
+.bg-xiaohongshu {
+  background-color: $xiaohongshu;
+}
+
+.bg-gradient-red {
+  background: linear-gradient(47deg, #ff2442, rgba(255, 38, 67, 0.80)) !important
+}
+
+// 행 음영
+.bg-shade {
+  background-color: #f8f8fb94 !important;
+}
+
+.banner-gradient {
+  background-image: linear-gradient(-45deg, #3b006f, #af1bce) !important;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(-45deg, #6300b9, #cd1ef1) !important;
+  background-position: center;
+}
+
+.bg-card-gradient {
+  background-image: linear-gradient(-45deg, #6300b9, #cd1ef1) !important;
+  background-position: center;
+}
+
+.bg-gender-male {
+  background-color: #5c21b7 !important;
+}
+
+.bg-gender-female {
+  background-color: #ff466a !important;
+}
+
+.bg-age-1 {
+  background-color: #AE77DC !important;
+}
+
+.bg-age-2 {
+  background-color: #BE95FF !important;
+}
+
+.bg-age-3 {
+  background-color: #7D4DC4 !important;
+}
+
+.bg-age-4 {
+  background-color: #6E02BF !important;
+}
+
+.bg-age-5 {
+  background-color: #580A77 !important;
+}
+
+.fs-9 {
+  font-size: 6rem;
+}

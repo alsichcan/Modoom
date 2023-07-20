@@ -1,0 +1,96 @@
+{
+  "name": "modoom",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@charlietango/use-native-lazy-loading": "^1.7.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "@loadable/component": "^5.10.3",
+    "@sentry/react": "^6.2.0",
+    "@sentry/tracing": "^6.2.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "attr-accept": "^2.0.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
+    "ga-4-react": "^0.1.28",
+    "lodash": "^4.17.15",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^1.0.4",
+    "react-autosize-textarea": "^7.1.0",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.1",
+    "react-dropzone": "^11.2.4",
+    "react-es6-progressbar.js": "^1.1.0",
+    "react-feather": "^2.0.9",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^4.5.1",
+    "react-image-file-resizer": "^0.4.2",
+    "react-intersection-observer": "^8.31.0",
+    "react-lottie": "^1.2.3",
+    "react-moment": "^1.1.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "4.0.1",
+    "react-select": "^4.1.0",
+    "react-toastify": "^5.4.0",
+    "react-truncate": "^2.4.0",
+    "react-typed": "^1.2.0",
+    "react-window": "^1.8.6",
+    "react-window-infinite-loader": "^1.0.7",
+    "reactstrap": "^8.1.1",
+    "swiper": "^6.4.10",
+    "uuid": "^8.3.2",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "scss": "gulp",
+    "deploy": "aws s3 sync ./build s3://modoom-react-frontend --profile=modoom_admin",
+    "invalidate": "aws cloudfront create-invalidation --profile=modoom_admin --distribution-id E157RWUAR08TNZ --paths / /build /css/* /index.html /error.html /service-worker.js /manifest.json /favicons/*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-rtlcss": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "prettier": "1.17.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

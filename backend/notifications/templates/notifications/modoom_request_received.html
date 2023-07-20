@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>HTML Email Template</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div style="width:100%">
+
+          <div style="max-width:600px;margin:0 auto;padding:60px 0 30px 0;font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;border:1px solid #e2e2e2">
+
+            <div align="center" style="padding-right:0px;padding-left:0px" class="logo-area">
+              <div style="font-size:1px;line-height:20px">&nbsp;</div><a href="https://modoom.us" style="outline:none" target="_blank"><img align="center" border="0" src = "https://modoom-react-frontend.s3.ap-northeast-2.amazonaws.com/static/media/modoom_logo.png" alt="Logo" title="Logo" style="text-decoration-line: none; height: auto; border: none; width: 100%; max-width: 143px; display: block;" width="143"></a>
+            </div>
+
+            <hr style="border:0;border-top:solid 1px #e2e2e2;width:90%;margin:30px auto" class="horizontal-line">
+
+            <div align=center style="max-width:90%;margin-left:auto;margin-right:auto;margin-top:40px" class="nomal-paragraph">
+
+              <div style="margin-top:20px">
+                  안녕하세요. {{ name }} 회원님! <br><br>
+                  {{ name }}님의 다음 모둠에 대한 <br> <strong>가입 신청</strong>이 <strong>도착 📩</strong> 했어요!
+              </div>
+
+            </div>
+
+              <table style="border-collapse: collapse; border-spacing: 0; width:100%; max-width:640px; min-width:320px; margin:0 auto">
+                <tbody>
+                <tr>
+                    <td style="padding:20px 0; text-align:center; font-size:10px;">
+                        <h2 style="margin: 2rem 0">
+                            <b style="color: black; letter-spacing: 5px;">{{ description }}</b>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:10px 0; font-size:13px; color:#999; border-bottom:0px solid #eaeaea; text-align: center;">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <div align=center style="margin-top:0px">
+                가입 신청을 확인하러
+                <br>
+                지금 바로 가볼까요? 😆
+            </div>
+
+            <div align="center" style="padding-top:30px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+              <a href="http://modoom.us" style="text-decoration-line: none; display: inline-block; color: rgb(255, 255, 255); background-color: #4F9ADD; border-radius: 40px; width: auto; border-width: 1px; border-style: solid; border-color: #4F9ADD; padding: 10px 25px;" target="_blank">🏠 바로가기</a>
+            </div>
+
+            <div align=center style="max-width:90%; margin-left:auto;margin-right:auto;margin-top:0px" class="nomal-paragraph">
+              <div style="margin-top:20px; font-size:12px">
+                  모둠을 이용하시는데 궁금한 점이나 불편한 점이 있으시면 <br>
+                  모둠이한테 DM🗨을 보내주시거나, 이 주소로 메일📧을 보내주세요! <br>
+                  최대한 빠르게 해결해드릴게요 😀
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
